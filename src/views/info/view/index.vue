@@ -90,12 +90,12 @@
     <div style="position:relative">
       <prephone class="fr" v-model="type">
         <div class="app">
-          <img src="@/assets/img/mobel/资讯图片.jpg" alt />
+          <a :href="model.Url"  target="_blank" ><img :src="model.ImageUrl" alt /></a>
           <div class="info-box">
             <p class="info-tit">{{model.Title}}</p>
             <div class="info-namebox">
               <span class="info-name">作者：正品查询平台</span>
-              <span class="info-time">2019/8/14 15:15:00</span>
+              <span class="info-time">{{getTime()}}</span>
             </div>
             <div class="info-detail">
               <p class="title">
@@ -104,7 +104,7 @@
                 </strong>
               </p>
               <p v-html="model.Content"></p>
-              <div class="videoBox" v-if="model.VideoUrl">
+              <div class="videoBox"   v-if="model.VideoUrl&&model.VideoMainImg">
                 <video
                   :src="model.VideoUrl"
                   :poster="model.VideoMainImg"
@@ -134,7 +134,7 @@ import prephone from '@/components/page-prephone'
 import tinymce from '@/components/com-tinymce'
 import upvideo from '@/components/page-upvideo'
 import uploadimg from '@/components/page-uploadImg'
-import { mapActions } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 import { assetsPath } from '@/axios/comAjax'
 export default {
   data () {
@@ -161,6 +161,7 @@ export default {
     })
   },
   methods: {
+    ...mapGetters(['getTime']),
     ...mapActions(['queryInfo', 'editInfo']),
     save () {
       var _ = this

@@ -21,11 +21,11 @@ const actions = {
 }
 const getters = {
   // 对time成员进行过滤，变为格式化时间：名称(state对象参数){}
-  // getTime (state) {
-  //   var tm = new Date(state.time)
-  //   // return tm.getFullYear() + '-' + (tm.getMonth() + 1) + '-' + tm.getDay()
-  //   return `${tm.getFullYear()}-${tm.getMonth() + 1}-${tm.getDay()}`
-  // }
+  getTime (state) {
+    var tm = new Date(state.time)
+    // return tm.getFullYear() + '-' + (tm.getMonth() + 1) + '-' + tm.getDay()
+    return `${tm.getFullYear()}-${tm.getMonth() + 1}-${tm.getDate()}`
+  }
 }
 // mutations：存放同步读取、修改state的的方法
 // 改变状态的方法

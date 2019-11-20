@@ -3,10 +3,10 @@ var Mock = require('mockjs')
 Mock.setup({
   timeout: 1000
 })
-
+import qs from 'qs'
 Mock.mock(/\/DataScreenHandler/, 'post', function (options) {
   // console.log(options.body)
-  var body = JSON.parse(options.body)
+  var body = qs.parse(options.body)
   switch (body.method) {
     // 1.编辑品牌信息接口
     case 'H5.EditBrandInfo':

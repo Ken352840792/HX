@@ -17,6 +17,7 @@
             <tinymce ref="editor" height="500px" v-model="model.PicContent" />
           </div>
         </div>
+          <div style="height:620px;position: relative;display:block;z-index:-1"></div>
       </div>
       <!-- 规格参数 -->
       <div v-show="state===1">
@@ -87,7 +88,7 @@
         <!-- 富文本编辑器 -->
         <div id="introduc">
           <div id="edit">
-            <tinymce ref="editor" v-model="model.Content" />
+            <tinymce ref="editor1"  height="500px"  v-model="model.Content" />
           </div>
         </div>
         <!-- 使用说明PDF -->
@@ -100,8 +101,7 @@
         </div>
       </div>
     </editfrom>
-    <div style="position:relative">
-      <prephone class="fr" v-model="type">
+    <prephone class="fr" v-model="type">
         <div class="app">
           <!-- mobel_title + mobel_logo -->
           <div class="header">
@@ -194,7 +194,6 @@
           <b-button variant="primary" style="width: 100px;height: 35px;" @click="save">保存</b-button>
         </b-form-group>
       </div>
-    </div>
   </div>
 </template>
 
@@ -301,9 +300,9 @@ function swapArray (arr, index1, index2) {
   margin-top: 5px;
 }
 .add_btn_row {
-  position: absolute;
-  right: 20px;
-  top: 650px;
+    position: absolute;
+    top: 750px;
+    right: 343px;
 }
 .app {
   padding: 0 5px 0 0;
@@ -463,7 +462,7 @@ function swapArray (arr, index1, index2) {
   height: 60px;
   border-bottom: 1px solid #ccc;
   .nav_pro {
-    cursor: pointer;
+
     p {
       width: 33.3%;
       float: left;
@@ -471,6 +470,7 @@ function swapArray (arr, index1, index2) {
       color: #616161;
       text-align: center;
       line-height: 58px;
+      cursor: pointer;
     }
     .underLine {
       font-size: 14px;
@@ -497,7 +497,7 @@ function swapArray (arr, index1, index2) {
   }
 }
 #introduc {
-  height: 600px;
+  height: 500px;
   margin-top: 10px;
   float: left;
   width: 100%;
@@ -579,8 +579,7 @@ function swapArray (arr, index1, index2) {
 }
 .upPDF {
   width: 100%;
-  padding: 10px;
-  position: absolute;
+  position: static;
   bottom: 0;
   button {
     width: 250px;

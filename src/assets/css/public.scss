@@ -64,15 +64,22 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-
-body {
-  height: 100%;
-}
 .fl{
   float: left;
 }
 .fr{
   float: right;
 }
-
-.mce-toolbar .mce-last { float: right; }
+body{
+  position: static;
+}
+video::-webkit-media-controls {
+  overflow: hidden !important;
+}
+video::-webkit-media-controls-enclosure {
+  width: calc(100% + 32px);
+  margin-left: auto;
+}
+video{
+  outline:none;
+}
