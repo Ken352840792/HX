@@ -1,0 +1,739 @@
+{
+	"info": {
+		"_postman_id": "ce6dfdae-bc97-4377-9c07-443b53ca3a32",
+		"name": "红星定制 copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "编辑品牌信息",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "app_key",
+							"value": "644F026929AB4AEDB6F7E2F3CDE1DE11",
+							"type": "text"
+						},
+						{
+							"key": "access_token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPQXV0aC1Kd3QiLCJleHAiOjE1NDQyNTMwNjQsImFwcElkIjoiQWxhZGRpbiIsImFwcFNlY3JldCI6Im9wZW4gc2VzYW1lIiwiZXhwaXJlc19pbiI6ODY0MDAsIk9wZW5JZCI6IjE5YWU0NzIzLWM1YWQtNDhhZi04M2I5LWE0NTRmMThlNzY2YyJ9.vuEr_iQZ9UZnNJcdbiiyYJ700niUln6g_OoY_omgT3s",
+							"type": "text"
+						},
+						{
+							"key": "method",
+							"value": "H5.EditBrandInfo",
+							"type": "text"
+						},
+						{
+							"key": "v",
+							"value": "1.0",
+							"type": "text"
+						},
+						{
+							"key": "sign",
+							"value": "453047e0d1cac56d46c3bd91aedd5ee2",
+							"type": "text"
+						},
+						{
+							"key": "format",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "BizParams",
+							"value": "{\"ORGANIZATIONID\": \"92230BC5DEFC4E5FA0286B7CB0ED6324\",\"BrandRemark\": \"13122139536\",\"VideoTitle\": \"潮流1号品牌申请加入\",\"VideoMainImg\": \"110\",\"VideoUrl\": \"ahao\",\"VideoID\": \"E22B3C136A01492D9A3F2525158BC5E3\",\"VideoType\": \"2019\",\"BrandBannerList\":[{ \"Title\": \"20\",\"AttachmentUri\": \"2019\",\"Url\": \"20\"},{ \"Title\": \"2019\",\"AttachmentUri\": \"2019\",\"Url\": \"2019\"}] , \"OrgAptitudeList\":[{ \"Title\": \"2019\",\"AttachmentUri\": \"2019Att\",\"Url\": \"2019URL\"},{ \"Title\": \"2019\",\"AttachmentUri\": \"20Att\",\"Url\": \"20URL\"}]}",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://apiuat.zhengpin.so/router",
+					"protocol": "http",
+					"host": [
+						"apiuat",
+						"zhengpin",
+						"so"
+					],
+					"path": [
+						"router"
+					]
+				},
+				"description": "新增和编辑品牌信息"
+			},
+			"response": []
+		},
+		{
+			"name": "查询品牌信息",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "app_key",
+							"value": "644F026929AB4AEDB6F7E2F3CDE1DE11",
+							"type": "text"
+						},
+						{
+							"key": "access_token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPQXV0aC1Kd3QiLCJleHAiOjE1NDQyNTMwNjQsImFwcElkIjoiQWxhZGRpbiIsImFwcFNlY3JldCI6Im9wZW4gc2VzYW1lIiwiZXhwaXJlc19pbiI6ODY0MDAsIk9wZW5JZCI6IjE5YWU0NzIzLWM1YWQtNDhhZi04M2I5LWE0NTRmMThlNzY2YyJ9.vuEr_iQZ9UZnNJcdbiiyYJ700niUln6g_OoY_omgT3s",
+							"type": "text"
+						},
+						{
+							"key": "method",
+							"value": "H5.QueryBrandInfo",
+							"type": "text"
+						},
+						{
+							"key": "v",
+							"value": "1.0",
+							"type": "text"
+						},
+						{
+							"key": "sign",
+							"value": "453047e0d1cac56d46c3bd91aedd5ee2",
+							"type": "text"
+						},
+						{
+							"key": "format",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "BizParams",
+							"value": "{\"Brandid\":\"68a3115b0da04885aa4265b45954e3f1\"}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://apiuat.zhengpin.so/router",
+					"protocol": "http",
+					"host": [
+						"apiuat",
+						"zhengpin",
+						"so"
+					],
+					"path": [
+						"router"
+					]
+				},
+				"description": "查询品牌内容"
+			},
+			"response": []
+		},
+		{
+			"name": "编辑品牌资讯",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "app_key",
+							"value": "644F026929AB4AEDB6F7E2F3CDE1DE11",
+							"type": "text"
+						},
+						{
+							"key": "access_token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPQXV0aC1Kd3QiLCJleHAiOjE1NDQyNTMwNjQsImFwcElkIjoiQWxhZGRpbiIsImFwcFNlY3JldCI6Im9wZW4gc2VzYW1lIiwiZXhwaXJlc19pbiI6ODY0MDAsIk9wZW5JZCI6IjE5YWU0NzIzLWM1YWQtNDhhZi04M2I5LWE0NTRmMThlNzY2YyJ9.vuEr_iQZ9UZnNJcdbiiyYJ700niUln6g_OoY_omgT3s",
+							"type": "text"
+						},
+						{
+							"key": "method",
+							"value": "H5.EditInformationInfo",
+							"type": "text"
+						},
+						{
+							"key": "v",
+							"value": "1.0",
+							"type": "text"
+						},
+						{
+							"key": "sign",
+							"value": "453047e0d1cac56d46c3bd91aedd5ee2",
+							"type": "text"
+						},
+						{
+							"key": "format",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "BizParams",
+							"value": "{\"ID\":\"0247e74813f84fe6a59251896d01a54c\",\"Title\": \"天宫一号\",\"SourceName\": \"副天宫一号\",\"Url\": \"www.baidu.com\",\"ImageUrl\": \"image-url\",\"Sort\": \"0\",\"Content\": \"hello Content\",\"IsHead\": \"1\",\"VideoUrl\": \"www.youku.com\",\"VideoTitle\": \"视频标题\",\"VideoMainImg\": \"视频主图URL\",\"VideoType\": \"2\",\"SourceId\":\"C647BE920EED42FAB12522DDC926343F\"}",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://apiuat.zhengpin.so/router",
+					"protocol": "http",
+					"host": [
+						"apiuat",
+						"zhengpin",
+						"so"
+					],
+					"path": [
+						"router"
+					]
+				},
+				"description": "编辑品牌资讯信息"
+			},
+			"response": []
+		},
+		{
+			"name": "查询品牌资讯",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "app_key",
+							"value": "644F026929AB4AEDB6F7E2F3CDE1DE11",
+							"type": "text"
+						},
+						{
+							"key": "access_token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPQXV0aC1Kd3QiLCJleHAiOjE1NDQyNTMwNjQsImFwcElkIjoiQWxhZGRpbiIsImFwcFNlY3JldCI6Im9wZW4gc2VzYW1lIiwiZXhwaXJlc19pbiI6ODY0MDAsIk9wZW5JZCI6IjE5YWU0NzIzLWM1YWQtNDhhZi04M2I5LWE0NTRmMThlNzY2YyJ9.vuEr_iQZ9UZnNJcdbiiyYJ700niUln6g_OoY_omgT3s",
+							"type": "text"
+						},
+						{
+							"key": "method",
+							"value": "H5.QueryInformationInfo",
+							"type": "text"
+						},
+						{
+							"key": "v",
+							"value": "1.0",
+							"type": "text"
+						},
+						{
+							"key": "sign",
+							"value": "453047e0d1cac56d46c3bd91aedd5ee2",
+							"type": "text"
+						},
+						{
+							"key": "format",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "BizParams",
+							"value": "{\"Id\":\"6b2e79703ada40e99049ffbc1dbc5572\"}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://apiuat.zhengpin.so/router",
+					"protocol": "http",
+					"host": [
+						"apiuat",
+						"zhengpin",
+						"so"
+					],
+					"path": [
+						"router"
+					]
+				},
+				"description": "查询品牌资讯"
+			},
+			"response": []
+		},
+		{
+			"name": "编辑产品信息",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "app_key",
+							"value": "644F026929AB4AEDB6F7E2F3CDE1DE11",
+							"type": "text"
+						},
+						{
+							"key": "access_token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPQXV0aC1Kd3QiLCJleHAiOjE1NDQyNTMwNjQsImFwcElkIjoiQWxhZGRpbiIsImFwcFNlY3JldCI6Im9wZW4gc2VzYW1lIiwiZXhwaXJlc19pbiI6ODY0MDAsIk9wZW5JZCI6IjE5YWU0NzIzLWM1YWQtNDhhZi04M2I5LWE0NTRmMThlNzY2YyJ9.vuEr_iQZ9UZnNJcdbiiyYJ700niUln6g_OoY_omgT3s",
+							"type": "text"
+						},
+						{
+							"key": "method",
+							"value": "H5.EditProductInfo",
+							"type": "text"
+						},
+						{
+							"key": "v",
+							"value": "1.0",
+							"type": "text"
+						},
+						{
+							"key": "sign",
+							"value": "453047e0d1cac56d46c3bd91aedd5ee2",
+							"type": "text"
+						},
+						{
+							"key": "format",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "BizParams",
+							"value": "{\"ID\":\"bd2aa754c5a64b049e376355a484804e\",\"Title\":\"潮流1号\",\"PicId\":\"13122139536\",\"PicContent\":\"产品详情\",\"ParameterId\":\"672fcd456c144814b004a88efc8cfa1e\",\"Parameters\": \"ahao\",\"FileID\": \"hello world\",\"FileTitle\": \"hello world\",\"FilePath\": \"hello world\",\"Content\": \"hello world\",\"CreateId\": \"hello world\",\"CreateName\": \"hello world\"}",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://apiuat.zhengpin.so/router",
+					"protocol": "http",
+					"host": [
+						"apiuat",
+						"zhengpin",
+						"so"
+					],
+					"path": [
+						"router"
+					]
+				},
+				"description": "编辑产品信息"
+			},
+			"response": []
+		},
+		{
+			"name": "查询产品信息",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "app_key",
+							"value": "644F026929AB4AEDB6F7E2F3CDE1DE11",
+							"type": "text"
+						},
+						{
+							"key": "access_token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPQXV0aC1Kd3QiLCJleHAiOjE1NDQyNTMwNjQsImFwcElkIjoiQWxhZGRpbiIsImFwcFNlY3JldCI6Im9wZW4gc2VzYW1lIiwiZXhwaXJlc19pbiI6ODY0MDAsIk9wZW5JZCI6IjE5YWU0NzIzLWM1YWQtNDhhZi04M2I5LWE0NTRmMThlNzY2YyJ9.vuEr_iQZ9UZnNJcdbiiyYJ700niUln6g_OoY_omgT3s",
+							"type": "text"
+						},
+						{
+							"key": "method",
+							"value": "H5.QueryProductInfo",
+							"type": "text"
+						},
+						{
+							"key": "v",
+							"value": "1.0",
+							"type": "text"
+						},
+						{
+							"key": "sign",
+							"value": "453047e0d1cac56d46c3bd91aedd5ee2",
+							"type": "text"
+						},
+						{
+							"key": "format",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "BizParams",
+							"value": "{\"id\":\"77ed9c4007a042bfbe3b529d3ea81cad\"}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://apiuat.zhengpin.so/router",
+					"protocol": "http",
+					"host": [
+						"apiuat",
+						"zhengpin",
+						"so"
+					],
+					"path": [
+						"router"
+					]
+				},
+				"description": "查询产品信息"
+			},
+			"response": []
+		},
+		{
+			"name": "判断产品标题",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "app_key",
+							"value": "644F026929AB4AEDB6F7E2F3CDE1DE11",
+							"type": "text"
+						},
+						{
+							"key": "access_token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPQXV0aC1Kd3QiLCJleHAiOjE1NDQyNTMwNjQsImFwcElkIjoiQWxhZGRpbiIsImFwcFNlY3JldCI6Im9wZW4gc2VzYW1lIiwiZXhwaXJlc19pbiI6ODY0MDAsIk9wZW5JZCI6IjE5YWU0NzIzLWM1YWQtNDhhZi04M2I5LWE0NTRmMThlNzY2YyJ9.vuEr_iQZ9UZnNJcdbiiyYJ700niUln6g_OoY_omgT3s",
+							"type": "text"
+						},
+						{
+							"key": "method",
+							"value": "H5.QueryProductTitle",
+							"type": "text"
+						},
+						{
+							"key": "v",
+							"value": "1.0",
+							"type": "text"
+						},
+						{
+							"key": "sign",
+							"value": "453047e0d1cac56d46c3bd91aedd5ee2",
+							"type": "text"
+						},
+						{
+							"key": "format",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "BizParams",
+							"value": "{\"Title\":\"标准产品详情\",\"id\":\"CAB6081DDBFC40CEBD517653359845C9\"}",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://apiuat.zhengpin.so/router",
+					"protocol": "http",
+					"host": [
+						"apiuat",
+						"zhengpin",
+						"so"
+					],
+					"path": [
+						"router"
+					]
+				},
+				"description": "判断产品标题是否存在"
+			},
+			"response": []
+		},
+		{
+			"name": "查询视频",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "app_key",
+							"value": "644F026929AB4AEDB6F7E2F3CDE1DE11",
+							"type": "text"
+						},
+						{
+							"key": "access_token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPQXV0aC1Kd3QiLCJleHAiOjE1NDQyNTMwNjQsImFwcElkIjoiQWxhZGRpbiIsImFwcFNlY3JldCI6Im9wZW4gc2VzYW1lIiwiZXhwaXJlc19pbiI6ODY0MDAsIk9wZW5JZCI6IjE5YWU0NzIzLWM1YWQtNDhhZi04M2I5LWE0NTRmMThlNzY2YyJ9.vuEr_iQZ9UZnNJcdbiiyYJ700niUln6g_OoY_omgT3s",
+							"type": "text"
+						},
+						{
+							"key": "method",
+							"value": "H5.QueryVideo",
+							"type": "text"
+						},
+						{
+							"key": "v",
+							"value": "1.0",
+							"type": "text"
+						},
+						{
+							"key": "sign",
+							"value": "453047e0d1cac56d46c3bd91aedd5ee2",
+							"type": "text"
+						},
+						{
+							"key": "format",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "BizParams",
+							"value": "{\"OrganizationId\":\"CAB6081DDBFC40CEBD517653359845C9\"}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://apiuat.zhengpin.so/router",
+					"protocol": "http",
+					"host": [
+						"apiuat",
+						"zhengpin",
+						"so"
+					],
+					"path": [
+						"router"
+					]
+				},
+				"description": "查询视频信息"
+			},
+			"response": []
+		},
+		{
+			"name": "视频地址",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "app_key",
+							"value": "644F026929AB4AEDB6F7E2F3CDE1DE11",
+							"type": "text"
+						},
+						{
+							"key": "access_token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPQXV0aC1Kd3QiLCJleHAiOjE1NDQyNTMwNjQsImFwcElkIjoiQWxhZGRpbiIsImFwcFNlY3JldCI6Im9wZW4gc2VzYW1lIiwiZXhwaXJlc19pbiI6ODY0MDAsIk9wZW5JZCI6IjE5YWU0NzIzLWM1YWQtNDhhZi04M2I5LWE0NTRmMThlNzY2YyJ9.vuEr_iQZ9UZnNJcdbiiyYJ700niUln6g_OoY_omgT3s",
+							"type": "text"
+						},
+						{
+							"key": "method",
+							"value": "H5.FindVideoAddress",
+							"type": "text"
+						},
+						{
+							"key": "v",
+							"value": "1.0",
+							"type": "text"
+						},
+						{
+							"key": "sign",
+							"value": "453047e0d1cac56d46c3bd91aedd5ee2",
+							"type": "text"
+						},
+						{
+							"key": "format",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "BizParams",
+							"value": "{\"VideoName\":\"1d2b59b5d7d54f2a8a630258d52e4d67.mp4\"}",
+							"description": "视频名称",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://apiuat.zhengpin.so/router",
+					"protocol": "http",
+					"host": [
+						"apiuat",
+						"zhengpin",
+						"so"
+					],
+					"path": [
+						"router"
+					]
+				},
+				"description": "根据视频名称，获取上传地址"
+			},
+			"response": []
+		},
+		{
+			"name": "视频连接地址",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "app_key",
+							"value": "644F026929AB4AEDB6F7E2F3CDE1DE11",
+							"type": "text"
+						},
+						{
+							"key": "access_token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPQXV0aC1Kd3QiLCJleHAiOjE1NDQyNTMwNjQsImFwcElkIjoiQWxhZGRpbiIsImFwcFNlY3JldCI6Im9wZW4gc2VzYW1lIiwiZXhwaXJlc19pbiI6ODY0MDAsIk9wZW5JZCI6IjE5YWU0NzIzLWM1YWQtNDhhZi04M2I5LWE0NTRmMThlNzY2YyJ9.vuEr_iQZ9UZnNJcdbiiyYJ700niUln6g_OoY_omgT3s",
+							"type": "text"
+						},
+						{
+							"key": "method",
+							"value": "H5.FindVideoAddress",
+							"type": "text"
+						},
+						{
+							"key": "v",
+							"value": "1.0",
+							"type": "text"
+						},
+						{
+							"key": "sign",
+							"value": "453047e0d1cac56d46c3bd91aedd5ee2",
+							"type": "text"
+						},
+						{
+							"key": "format",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "BizParams",
+							"value": "{\"VideoName\":\"1d2b59b5d7d54f2a8a630258d52e4d67\"}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://apiuat.zhengpin.so/router",
+					"protocol": "http",
+					"host": [
+						"apiuat",
+						"zhengpin",
+						"so"
+					],
+					"path": [
+						"router"
+					]
+				},
+				"description": "根据视频名称返回视频的连接地址"
+			},
+			"response": []
+		},
+		{
+			"name": "test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
