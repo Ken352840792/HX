@@ -11,6 +11,8 @@ import { HappyScroll } from 'vue-happy-scroll'
 import awesomeSwiper from 'vue-awesome-swiper'
 // 拖拽组件
 import dnd from 'awe-dnd'
+// 验证组件
+import Vuelidate from 'vuelidate'
 
 // 引入相关CSS
 import './assets/css/base.css'
@@ -24,6 +26,7 @@ Vue.use(axios)
 Vue.use(awesomeSwiper)
 Vue.use(bootstrap)
 Vue.use(dnd)
+Vue.use(Vuelidate)
 Vue.component('happy-scroll', HappyScroll)
 Vue.config.productionTip = false
 new Vue({
